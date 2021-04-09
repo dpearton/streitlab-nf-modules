@@ -11,9 +11,9 @@ RUN  apt-get update \
 
 # Install cellranger
 RUN cd /opt/ && \
-  wget -O cellranger-4.0.0.tar.gz "https://cf.10xgenomics.com/releases/cell-exp/cellranger-4.0.0.tar.gz?Expires=1618014446&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZi4xMHhnZW5vbWljcy5jb20vcmVsZWFzZXMvY2VsbC1leHAvY2VsbHJhbmdlci00LjAuMC50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2MTgwMTQ0NDZ9fX1dfQ__&Signature=To8mvt53qmeKTZA5gU2DMrukXjNXq8tAP1q2~Tv992hKerFjDJWYOuBc0vyWOT3IyI6Y36EnJHrNn5ni5nBDCOJad~MO0hbr1WZTDSApa77ml40xprY~J7hPDmfx0XX9Y8wgPwWcbfXdwFa-Rcjj2M~x9dpgQ4-aiPiW-OzOfyIhdrdvifp6g9IfUV527cMgeEYC1e3~neFQtWrfaO7FZLvtlpqSieQ04TjPb9gx9dDY2EpsI52fxhvKFnhF2j8Iev0qjfDGZmxhdxhIOaDPfG5w4yXlrbMJkEmGnIEA7XiL9kWxkiyUU7rU7st7dgIbOccpQxbPZIXhiYhrjVas2g__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA" && \	
-	tar -xzvf cellranger-4.0.0.tar.gz && \
-	rm -f cellranger-4.0.0.tar.gz
+	wget -O cellranger-6.0.0.tar.gz "https://cf.10xgenomics.com/releases/cell-exp/cellranger-6.0.0.tar.gz?Expires=1617939338&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZi4xMHhnZW5vbWljcy5jb20vcmVsZWFzZXMvY2VsbC1leHAvY2VsbHJhbmdlci02LjAuMC50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2MTc5MzkzMzh9fX1dfQ__&Signature=C324pkZC3vzUkgbAv9vZoSnSBjwdv-NrH2hDKAf2noqrItOGI0hWhPmgXf-0YPcd-QrGkM2ew2c4ZuP-HcdxvgcZ1yI7RQPivR1Lt2J4u6dz2TRixHpFCeDfkDyWTgl1uaDB-JpHSRqlvJa8Tu-rnIK81VAQLodKneWCHkagU5fqKUAuiaaVGFGhTQ9WZhfE91FVE0~r-Y6717m4OMc4GybabKGoP6solVOmV9bikSppc0K4J~czlGK606PFetarkFrqd9Apqdq7I1C8RSIGUmAV2iMbCVuwPRRsVJxa-FN0k~3fVJ6sJFmcOj~2e9OQQTxv5zqWe7d0MZo~gTSTLA__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA" && \
+  tar -xzvf cellranger-6.0.0.tar.gz && \
+	rm -f cellranger-6.0.0.tar.gz
 
 # Set path
-ENV PATH /opt/cellranger-4.0.0:$PATH
+ENV PATH /opt/cellranger-6.0.0:$PATH
