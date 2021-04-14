@@ -11,7 +11,7 @@ RUN  apt-get update \
 
 # Install cellranger-atac
 RUN cd /opt/ && \
-  wget -O cellranger-atac-1.2.0.tar.gz "https://cf.10xgenomics.com/releases/cell-atac/cellranger-atac-1.2.0.tar.gz?Expires=1617940351&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZi4xMHhnZW5vbWljcy5jb20vcmVsZWFzZXMvY2VsbC1hdGFjL2NlbGxyYW5nZXItYXRhYy0xLjIuMC50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2MTc5NDAzNTF9fX1dfQ__&Signature=bzkYGbdfz2NwCseIviIgK-r9aHn7T5JrpiJVUKLfmqMJEW9iIwpD0tvQAXnTAn2J8CuF~H-q-jspcFzto0AllM24H2RSfz7K980V3aVuAU0ddNKydAhjYkO7-RJKe66v-rLiS4eGz~gXzQQmlr31XR0sZh-bwR5nKa4M4KGpUwaQhkKZsVdl7qNhVc1SfdzbynN7UExA-sIwn~FUoGn27thpxnXhF7Qjj2qw1gCexadmHFujmVVyBTKOow4IuwZsOXtB8qt~pGXRDl6Jk3z3po9RmOXiCOtQskzz3Vc~ei6EvoytoVpNJ-KWUB1bpAstLrcYr8OnUKFRqm9Ld4A7iA__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA" && \
+  wget -O cellranger-atac-1.2.0.tar.gz "https://cf.10xgenomics.com/releases/cell-atac/cellranger-atac-1.2.0.tar.gz?Expires=1618438611&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZi4xMHhnZW5vbWljcy5jb20vcmVsZWFzZXMvY2VsbC1hdGFjL2NlbGxyYW5nZXItYXRhYy0xLjIuMC50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2MTg0Mzg2MTF9fX1dfQ__&Signature=fpRycHMyUeLt~rg2L1S2~XLEkQbrZ-soPxEyLc9iIFz-~iPYmVxM6DVAy9oEqERZLpAHHS2QLZclLrzGTOUT~--eG3ZYFC0rV0I~qJZ7QOjP-8QczY55EVKgnTVnE4AHVLGVO-nwlAB99hjvtyVPoC4801z8S46L-rF9MEIdGxRkqy6oy1NNr3fB--DnTHieSQ311HbWxw1g23uN6lJHpBKJ9uqWqHrcXBW90D-OAMDSeJjcaqMSYC5pIMEmIoC~cDNuW9e1tghrD5lcnPwdyHBzPUaurrF16bX4j0oiqZsJvuHPSKilvjC3tXSuLlOtCQBjxNI59Q2gVJL38SrCDQ__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA" && \
   tar -xzvf cellranger-atac-1.2.0.tar.gz && \
 	rm -f cellranger-atac-1.2.0.tar.gz
 
