@@ -16,4 +16,4 @@ RUN cd /opt/ && \
 	rm -f cellranger-atac-2.0.0.tar.gz
 
 # Set path
-ENV PATH /opt/cellranger-atac-2.0.0.tar.gz:$PATH
+ENV PATH /opt/cellranger-atac-2.0.0:$PATH
