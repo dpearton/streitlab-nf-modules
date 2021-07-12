@@ -1,5 +1,5 @@
 # Set the base image to Ubuntu 16.04
-FROM python
+FROM ubuntu:16.04
 
 LABEL authors="eva.hamrud@kcl.ac.uk" \
       description="Docker image containing cellranger-atac"
