@@ -2,7 +2,7 @@
 FROM continuumio/miniconda:4.7.12
 
 LABEL authors="eva.hamrud@kcl.ac.uk" \
-      description="Docker image containing cellranger-atac and python"
+      description="Docker image containing cellranger-atac and python - TEST"
 
 # update apt-get and install
 RUN  apt-get update \
