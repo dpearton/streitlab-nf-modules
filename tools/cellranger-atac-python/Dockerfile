@@ -2,12 +2,15 @@
 FROM continuumio/miniconda:4.7.12
 
 LABEL authors="eva.hamrud@kcl.ac.uk" \
-      description="Docker image containing cellranger-atac and python - TEST"
+      description="Docker image containing cellranger-atac and python"
 
 # update apt-get and install
 RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
+
+# installs procps so nextflow can use 'ps' command to collect task metrics
+RUN apt-get update && apt install -y procps g++ && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install cellranger-atac
 RUN cd /opt/ && \
